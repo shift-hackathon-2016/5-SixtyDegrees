@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		936BFE1B1CFE28B200C1004B /* SDLMoodCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936BFE1A1CFE28B200C1004B /* SDLMoodCardView.xib */; };
 		936BFE1E1CFE295800C1004B /* SDLMoodCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE1D1CFE295800C1004B /* SDLMoodCard.m */; };
+		936BFE2A1CFE301900C1004B /* FLKAutoLayoutPredicateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE211CFE301900C1004B /* FLKAutoLayoutPredicateList.m */; };
+		936BFE2B1CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE231CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.m */; };
+		936BFE2C1CFE301900C1004B /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE251CFE301900C1004B /* UIView+FLKAutoLayout.m */; };
+		936BFE2D1CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE271CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m */; };
+		936BFE2E1CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE291CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m */; };
 		93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */; };
 		93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */; };
 		93A0C0291CFDE39A003E7747 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0C0281CFDE39A003E7747 /* MapKit.framework */; };
@@ -26,6 +31,16 @@
 		936BFE1A1CFE28B200C1004B /* SDLMoodCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDLMoodCardView.xib; sourceTree = "<group>"; };
 		936BFE1C1CFE295800C1004B /* SDLMoodCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodCard.h; sourceTree = "<group>"; };
 		936BFE1D1CFE295800C1004B /* SDLMoodCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodCard.m; sourceTree = "<group>"; };
+		936BFE201CFE301900C1004B /* FLKAutoLayoutPredicateList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKAutoLayoutPredicateList.h; sourceTree = "<group>"; };
+		936BFE211CFE301900C1004B /* FLKAutoLayoutPredicateList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKAutoLayoutPredicateList.m; sourceTree = "<group>"; };
+		936BFE221CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+FLKAutoLayoutDebug.h"; sourceTree = "<group>"; };
+		936BFE231CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+FLKAutoLayoutDebug.m"; sourceTree = "<group>"; };
+		936BFE241CFE301900C1004B /* UIView+FLKAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKAutoLayout.h"; sourceTree = "<group>"; };
+		936BFE251CFE301900C1004B /* UIView+FLKAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKAutoLayout.m"; sourceTree = "<group>"; };
+		936BFE261CFE301900C1004B /* UIView+FLKAutoLayoutDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKAutoLayoutDebug.h"; sourceTree = "<group>"; };
+		936BFE271CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKAutoLayoutDebug.m"; sourceTree = "<group>"; };
+		936BFE281CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKAutoLayoutPredicate.h"; sourceTree = "<group>"; };
+		936BFE291CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKAutoLayoutPredicate.m"; sourceTree = "<group>"; };
 		93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLocationManager.h; sourceTree = "<group>"; };
 		93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLLocationManager.m; sourceTree = "<group>"; };
 		93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodMapViewController.h; sourceTree = "<group>"; };
@@ -58,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		936BFE1F1CFE301900C1004B /* FLKAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				936BFE201CFE301900C1004B /* FLKAutoLayoutPredicateList.h */,
+				936BFE211CFE301900C1004B /* FLKAutoLayoutPredicateList.m */,
+				936BFE221CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.h */,
+				936BFE231CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.m */,
+				936BFE241CFE301900C1004B /* UIView+FLKAutoLayout.h */,
+				936BFE251CFE301900C1004B /* UIView+FLKAutoLayout.m */,
+				936BFE261CFE301900C1004B /* UIView+FLKAutoLayoutDebug.h */,
+				936BFE271CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m */,
+				936BFE281CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.h */,
+				936BFE291CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m */,
+			);
+			path = FLKAutoLayout;
+			sourceTree = "<group>";
+		};
 		93A0C02A1CFDE4BA003E7747 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +159,7 @@
 		93FE0AEA1CFDB46300AC877C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				936BFE1F1CFE301900C1004B /* FLKAutoLayout */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -260,12 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936BFE2E1CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m in Sources */,
+				936BFE2B1CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */,
+				936BFE2A1CFE301900C1004B /* FLKAutoLayoutPredicateList.m in Sources */,
 				93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */,
 				93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */,
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
+				936BFE2D1CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m in Sources */,
 				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
 				936BFE1E1CFE295800C1004B /* SDLMoodCard.m in Sources */,
 				93FE0AF81CFDB57E00AC877C /* SDLMoodLogViewController.m in Sources */,
+				936BFE2C1CFE301900C1004B /* UIView+FLKAutoLayout.m in Sources */,
 				93A0C0301CFE16C7003E7747 /* SDLInfoViewController.m in Sources */,
 				93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */,
 			);
