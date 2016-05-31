@@ -60,16 +60,6 @@
     [mapView setRegion:mapRegion animated:animated];
 }
 
-- (NSArray *)moodFaceImages
-{
-    return @[@"MoodFaceExcited", @"MoodFaceHappy", @"MoodFaceRelaxed", @"MoodFaceNeutral", @"MoodFaceBored", @"MoodFaceSad", @"MoodFaceAngry"];
-}
-
-- (NSArray *)moodTitles
-{
-    return @[@"Excited", @"Happy", @"Relaxed", @"Neutral", @"Bored", @"Sad", @"Angry"];
-}
-
 #pragma mark - MKMapView Delegate -
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
