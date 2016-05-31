@@ -37,6 +37,9 @@
                                     <constraint firstAttribute="width" secondItem="yPg-mu-SYO" secondAttribute="height" multiplier="1:1" id="17Y-KZ-aYg"/>
                                 </constraints>
                                 <state key="normal" image="ButtonInfo"/>
+                                <connections>
+                                    <segue destination="QBk-so-L0D" kind="presentation" modalTransitionStyle="crossDissolve" id="ucI-kb-cku"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s7-uS-9xc">
                                 <rect key="frame" x="533" y="51" width="39" height="39"/>
@@ -103,6 +106,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Info View Controller-->
+        <scene sceneID="sF9-2T-taE">
+            <objects>
+                <viewController id="QBk-so-L0D" customClass="SDLInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BZH-DZ-lf1"/>
+                        <viewControllerLayoutGuide type="bottom" id="HuH-40-CNS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QRW-bs-8H8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-qV-JfU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFM-R4-R8e">
+                                <rect key="frame" x="543" y="32" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KFM-R4-R8e" secondAttribute="height" multiplier="1:1" id="8zB-gp-AQT"/>
+                                </constraints>
+                                <state key="normal" image="ButtonClose"/>
+                                <connections>
+                                    <action selector="buttonClosePressed:" destination="QBk-so-L0D" eventType="touchUpInside" id="eh0-Xz-qqQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJu-Fu-lBJ">
+                                <rect key="frame" x="271" y="36" width="59" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XtV-ad-j2I">
+                                <rect key="frame" x="105" y="111" width="390" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XtV-ad-j2I" secondAttribute="height" multiplier="380:166" id="ozt-Wk-QXb"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Egb-sk-G6z">
+                                <rect key="frame" x="42" y="320" width="516" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HuH-40-CNS" firstAttribute="top" secondItem="Egb-sk-G6z" secondAttribute="bottom" constant="152" id="31h-RN-FEN"/>
+                            <constraint firstItem="Xsf-qV-JfU" firstAttribute="centerY" secondItem="QRW-bs-8H8" secondAttribute="centerY" id="CGg-ej-0nT"/>
+                            <constraint firstItem="KFM-R4-R8e" firstAttribute="top" secondItem="BZH-DZ-lf1" secondAttribute="bottom" constant="12" id="Mnq-x3-RkP"/>
+                            <constraint firstItem="XtV-ad-j2I" firstAttribute="top" secondItem="EJu-Fu-lBJ" secondAttribute="bottom" constant="45" id="Na1-nS-0sM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KFM-R4-R8e" secondAttribute="trailing" constant="8" id="QAs-tC-rYn"/>
+                            <constraint firstItem="Egb-sk-G6z" firstAttribute="top" secondItem="XtV-ad-j2I" secondAttribute="bottom" constant="39" id="V5I-Xo-y1i"/>
+                            <constraint firstItem="XtV-ad-j2I" firstAttribute="centerX" secondItem="QRW-bs-8H8" secondAttribute="centerX" id="Yz7-C5-KsE"/>
+                            <constraint firstItem="Xsf-qV-JfU" firstAttribute="centerX" secondItem="QRW-bs-8H8" secondAttribute="centerX" id="Zta-sD-yTp"/>
+                            <constraint firstItem="XtV-ad-j2I" firstAttribute="width" secondItem="QRW-bs-8H8" secondAttribute="width" multiplier="0.65" id="bIU-aj-fMz"/>
+                            <constraint firstItem="Egb-sk-G6z" firstAttribute="width" secondItem="QRW-bs-8H8" secondAttribute="width" multiplier="0.86" id="cTj-Py-b71"/>
+                            <constraint firstItem="Xsf-qV-JfU" firstAttribute="width" secondItem="QRW-bs-8H8" secondAttribute="width" id="eJG-g0-uE4"/>
+                            <constraint firstItem="Xsf-qV-JfU" firstAttribute="height" secondItem="QRW-bs-8H8" secondAttribute="height" id="gta-F1-kWL"/>
+                            <constraint firstItem="Egb-sk-G6z" firstAttribute="centerX" secondItem="QRW-bs-8H8" secondAttribute="centerX" id="lOS-M6-T1P"/>
+                            <constraint firstItem="EJu-Fu-lBJ" firstAttribute="top" secondItem="BZH-DZ-lf1" secondAttribute="bottom" constant="16" id="vsd-az-bNQ"/>
+                            <constraint firstItem="EJu-Fu-lBJ" firstAttribute="centerX" secondItem="QRW-bs-8H8" secondAttribute="centerX" id="xNN-TI-r8N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonClose" destination="KFM-R4-R8e" id="aDR-lH-eNv"/>
+                        <outlet property="labelTitle" destination="EJu-Fu-lBJ" id="fk1-ay-tDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zE-6Z-Lxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="1111"/>
+        </scene>
         <!--Mood Map View Controller-->
         <scene sceneID="fOS-9W-okD">
             <objects>
@@ -141,8 +225,10 @@
     </scenes>
     <resources>
         <image name="Background" width="375" height="667"/>
+        <image name="ButtonClose" width="29" height="29"/>
         <image name="ButtonInfo" width="38" height="39"/>
         <image name="ButtonSearch" width="38" height="39"/>
+        <image name="InfoLogo" width="190" height="83"/>
         <image name="NavigationLogo" width="103" height="45"/>
     </resources>
 </document>

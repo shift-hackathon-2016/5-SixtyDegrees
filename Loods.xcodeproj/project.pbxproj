@@ -10,6 +10,7 @@
 		93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */; };
 		93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */; };
 		93A0C0291CFDE39A003E7747 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0C0281CFDE39A003E7747 /* MapKit.framework */; };
+		93A0C0301CFE16C7003E7747 /* SDLInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C02F1CFE16C7003E7747 /* SDLInfoViewController.m */; };
 		93FE0AD01CFDB43E00AC877C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ACF1CFDB43E00AC877C /* main.m */; };
 		93FE0AD91CFDB43E00AC877C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0AD71CFDB43E00AC877C /* Main.storyboard */; };
 		93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */; };
@@ -25,6 +26,8 @@
 		93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodMapViewController.h; sourceTree = "<group>"; };
 		93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodMapViewController.m; sourceTree = "<group>"; };
 		93A0C0281CFDE39A003E7747 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		93A0C02E1CFE16C7003E7747 /* SDLInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLInfoViewController.h; sourceTree = "<group>"; };
+		93A0C02F1CFE16C7003E7747 /* SDLInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLInfoViewController.m; sourceTree = "<group>"; };
 		93FE0ACB1CFDB43E00AC877C /* Loods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FE0ACF1CFDB43E00AC877C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93FE0AD81CFDB43E00AC877C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				93FE0AF71CFDB57E00AC877C /* SDLMoodLogViewController.m */,
 				93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */,
 				93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */,
+				93A0C02E1CFE16C7003E7747 /* SDLInfoViewController.h */,
+				93A0C02F1CFE16C7003E7747 /* SDLInfoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
 				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
 				93FE0AF81CFDB57E00AC877C /* SDLMoodLogViewController.m in Sources */,
+				93A0C0301CFE16C7003E7747 /* SDLInfoViewController.m in Sources */,
 				93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
