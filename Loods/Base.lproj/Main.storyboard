@@ -215,6 +215,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-FJ-45Z">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavigationBar" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-PQ-qzK">
+                                <rect key="frame" x="0.0" y="-2" width="600" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lKb-PQ-qzK" secondAttribute="height" multiplier="751:300" id="eLY-Ha-ATH"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavigationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2Kb-Na-f9K">
                                 <rect key="frame" x="248" y="38" width="104" height="45"/>
                                 <constraints>
@@ -227,6 +233,9 @@
                                     <constraint firstAttribute="width" secondItem="ncS-UQ-Yzr" secondAttribute="height" multiplier="1:1" id="HTD-Yp-7m0"/>
                                 </constraints>
                                 <state key="normal" image="ButtonInfo"/>
+                                <connections>
+                                    <action selector="buttonInfoPressed:" destination="bZI-Fz-B3i" eventType="touchUpInside" id="tmC-ot-zJe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -236,24 +245,30 @@
                             <constraint firstItem="ncS-UQ-Yzr" firstAttribute="top" secondItem="NYQ-kT-HCB" secondAttribute="bottom" constant="-6" id="7Za-dh-C6v"/>
                             <constraint firstItem="XkN-FJ-45Z" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="width" id="7fX-x8-Bwu"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="8xN-Bj-sqg"/>
+                            <constraint firstItem="lKb-PQ-qzK" firstAttribute="top" secondItem="NYQ-kT-HCB" secondAttribute="bottom" constant="-22" id="9VQ-Po-knK"/>
                             <constraint firstItem="XkN-FJ-45Z" firstAttribute="height" secondItem="bsi-j9-87i" secondAttribute="height" id="Fi8-FF-4rn"/>
                             <constraint firstItem="XkN-FJ-45Z" firstAttribute="centerY" secondItem="bsi-j9-87i" secondAttribute="centerY" id="Ke6-Ty-xpw"/>
                             <constraint firstItem="ncS-UQ-Yzr" firstAttribute="leading" secondItem="bsi-j9-87i" secondAttribute="leadingMargin" constant="8" id="QMw-zA-se3"/>
+                            <constraint firstItem="lKb-PQ-qzK" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="width" id="XiM-3g-y4w"/>
                             <constraint firstItem="2Kb-Na-f9K" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="Zs9-Ut-HPi"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="width" id="cf4-i6-Azo"/>
                             <constraint firstItem="ncS-UQ-Yzr" firstAttribute="centerY" secondItem="2Kb-Na-f9K" secondAttribute="centerY" constant="-6" id="exp-l7-3tm"/>
                             <constraint firstItem="2Kb-Na-f9K" firstAttribute="top" secondItem="NYQ-kT-HCB" secondAttribute="bottom" constant="18" id="ez1-1O-SKq"/>
                             <constraint firstItem="ncS-UQ-Yzr" firstAttribute="centerX" secondItem="2Kb-Na-f9K" secondAttribute="centerX" id="fds-o7-BfH"/>
+                            <constraint firstItem="lKb-PQ-qzK" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="oi8-S3-eFb"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="height" secondItem="bsi-j9-87i" secondAttribute="height" id="uZc-l8-Gf2"/>
+                            <constraint firstItem="lKb-PQ-qzK" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="height" multiplier="751:300" id="xm7-Fi-Mh4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="7Za-dh-C6v"/>
                                 <exclude reference="fds-o7-BfH"/>
+                                <exclude reference="xm7-Fi-Mh4"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="buttonInfo" destination="ncS-UQ-Yzr" id="jb7-is-r8y"/>
                         <outlet property="mapViewMood" destination="Sb4-4X-NTG" id="Nqw-gu-M9S"/>
                     </connections>
                 </viewController>
@@ -269,6 +284,7 @@
         <image name="ButtonSearch" width="38" height="39"/>
         <image name="InfoLogo" width="190" height="83"/>
         <image name="MapOverlay" width="375" height="667"/>
+        <image name="NavigationBar" width="375" height="150"/>
         <image name="NavigationLogo" width="103" height="45"/>
     </resources>
 </document>

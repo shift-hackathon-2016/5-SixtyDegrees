@@ -15,10 +15,13 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapViewMood;
 
 @property (assign, nonatomic) BOOL animatedMapToUserLocation;
+@property (weak, nonatomic) IBOutlet UIButton *buttonInfo;
 
 @end
 
 @implementation SDLMoodMapViewController
+
+#pragma mark - VC Lifecycle -
 
 - (void)viewDidLoad
 {
@@ -27,15 +30,24 @@
     [self addRadiusCircle:[[CLLocation alloc] initWithLatitude:46.7667 longitude:23.58]];
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - UI -
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+#pragma mark - Helper -
+
 - (void)addRadiusCircle:(CLLocation *)location
 {
     MKCircle *circle = [MKCircle circleWithCenterCoordinate:location.coordinate radius:10000]; //meters
     [self.mapViewMood addOverlay:circle];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 - (void)zoomMap:(MKMapView*)mapView toUserLocationAnimated:(BOOL)animated
@@ -47,6 +59,8 @@
     
     [mapView setRegion:mapRegion animated:animated];
 }
+
+#pragma mark - MKMapView Delegate -
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
@@ -70,6 +84,12 @@
     else{
         return nil;
     }
+}
+
+#pragma mark - Button Actions -
+
+- (IBAction)buttonInfoPressed:(id)sender
+{
 }
 
 @end
