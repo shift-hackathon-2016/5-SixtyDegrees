@@ -238,6 +238,7 @@
                                 <state key="normal" image="ButtonInfo"/>
                                 <connections>
                                     <action selector="buttonInfoPressed:" destination="bZI-Fz-B3i" eventType="touchUpInside" id="tmC-ot-zJe"/>
+                                    <segue destination="QBk-so-L0D" kind="presentation" modalTransitionStyle="crossDissolve" id="0cg-aa-jU6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -290,4 +291,7 @@
         <image name="NavigationBar" width="375" height="150"/>
         <image name="NavigationLogo" width="103" height="45"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ucI-kb-cku"/>
+    </inferredMetricsTieBreakers>
 </document>
