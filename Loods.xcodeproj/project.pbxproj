@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93FE0AD01CFDB43E00AC877C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ACF1CFDB43E00AC877C /* main.m */; };
+		93FE0AD91CFDB43E00AC877C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0AD71CFDB43E00AC877C /* Main.storyboard */; };
+		93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */; };
+		93FE0AE11CFDB43E00AC877C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0ADF1CFDB43E00AC877C /* LaunchScreen.storyboard */; };
+		93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0AF01CFDB4D000AC877C /* AppDelegate.m */; };
+		93FE0AF51CFDB51500AC877C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0AF41CFDB51500AC877C /* Assets.xcassets */; };
+		93FE0AF81CFDB57E00AC877C /* MoodLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0AF71CFDB57E00AC877C /* MoodLogViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93FE0ACB1CFDB43E00AC877C /* Loods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FE0ACF1CFDB43E00AC877C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93FE0AD81CFDB43E00AC877C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93FE0ADB1CFDB43E00AC877C /* Loods.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Loods.xcdatamodel; sourceTree = "<group>"; };
+		93FE0AE01CFDB43E00AC877C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93FE0AE21CFDB43E00AC877C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93FE0AEF1CFDB4D000AC877C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93FE0AF01CFDB4D000AC877C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93FE0AF41CFDB51500AC877C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93FE0AF61CFDB57E00AC877C /* MoodLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodLogViewController.h; sourceTree = "<group>"; };
+		93FE0AF71CFDB57E00AC877C /* MoodLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodLogViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93FE0AC81CFDB43E00AC877C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93FE0AC21CFDB43E00AC877C = {
+			isa = PBXGroup;
+			children = (
+				93FE0ACD1CFDB43E00AC877C /* Loods */,
+				93FE0ACC1CFDB43E00AC877C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93FE0ACC1CFDB43E00AC877C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0ACB1CFDB43E00AC877C /* Loods.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93FE0ACD1CFDB43E00AC877C /* Loods */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AF21CFDB51500AC877C /* Resources */,
+				93FE0AE81CFDB46300AC877C /* Source */,
+				93FE0AED1CFDB46300AC877C /* Views */,
+				93FE0ADF1CFDB43E00AC877C /* LaunchScreen.storyboard */,
+				93FE0AE21CFDB43E00AC877C /* Info.plist */,
+				93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */,
+				93FE0ACE1CFDB43E00AC877C /* Supporting Files */,
+			);
+			path = Loods;
+			sourceTree = "<group>";
+		};
+		93FE0ACE1CFDB43E00AC877C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0ACF1CFDB43E00AC877C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93FE0AE81CFDB46300AC877C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AE91CFDB46300AC877C /* Classes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		93FE0AE91CFDB46300AC877C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AEE1CFDB4D000AC877C /* AppDelegate */,
+				93FE0AEA1CFDB46300AC877C /* Libs */,
+				93FE0AEB1CFDB46300AC877C /* Models */,
+				93FE0AEC1CFDB46300AC877C /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93FE0AEA1CFDB46300AC877C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		93FE0AEB1CFDB46300AC877C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93FE0AEC1CFDB46300AC877C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AF61CFDB57E00AC877C /* MoodLogViewController.h */,
+				93FE0AF71CFDB57E00AC877C /* MoodLogViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		93FE0AED1CFDB46300AC877C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AD71CFDB43E00AC877C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93FE0AEE1CFDB4D000AC877C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AEF1CFDB4D000AC877C /* AppDelegate.h */,
+				93FE0AF01CFDB4D000AC877C /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		93FE0AF21CFDB51500AC877C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AF31CFDB51500AC877C /* Graphics */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93FE0AF31CFDB51500AC877C /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				93FE0AF41CFDB51500AC877C /* Assets.xcassets */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93FE0ACA1CFDB43E00AC877C /* Loods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93FE0AE51CFDB43E00AC877C /* Build configuration list for PBXNativeTarget "Loods" */;
+			buildPhases = (
+				93FE0AC71CFDB43E00AC877C /* Sources */,
+				93FE0AC81CFDB43E00AC877C /* Frameworks */,
+				93FE0AC91CFDB43E00AC877C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loods;
+			productName = Loods;
+			productReference = 93FE0ACB1CFDB43E00AC877C /* Loods.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93FE0AC31CFDB43E00AC877C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SixtyDegrees;
+				TargetAttributes = {
+					93FE0ACA1CFDB43E00AC877C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 93FE0AC61CFDB43E00AC877C /* Build configuration list for PBXProject "Loods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93FE0AC21CFDB43E00AC877C;
+			productRefGroup = 93FE0ACC1CFDB43E00AC877C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93FE0ACA1CFDB43E00AC877C /* Loods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93FE0AC91CFDB43E00AC877C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FE0AE11CFDB43E00AC877C /* LaunchScreen.storyboard in Resources */,
+				93FE0AF51CFDB51500AC877C /* Assets.xcassets in Resources */,
+				93FE0AD91CFDB43E00AC877C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93FE0AC71CFDB43E00AC877C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
+				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
+				93FE0AF81CFDB57E00AC877C /* MoodLogViewController.m in Sources */,
+				93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93FE0AD71CFDB43E00AC877C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FE0AD81CFDB43E00AC877C /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		93FE0ADF1CFDB43E00AC877C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FE0AE01CFDB43E00AC877C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93FE0AE31CFDB43E00AC877C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93FE0AE41CFDB43E00AC877C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93FE0AE61CFDB43E00AC877C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Loods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SixtyDegrees.Loods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93FE0AE71CFDB43E00AC877C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Loods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SixtyDegrees.Loods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93FE0AC61CFDB43E00AC877C /* Build configuration list for PBXProject "Loods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93FE0AE31CFDB43E00AC877C /* Debug */,
+				93FE0AE41CFDB43E00AC877C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93FE0AE51CFDB43E00AC877C /* Build configuration list for PBXNativeTarget "Loods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93FE0AE61CFDB43E00AC877C /* Debug */,
+				93FE0AE71CFDB43E00AC877C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93FE0ADB1CFDB43E00AC877C /* Loods.xcdatamodel */,
+			);
+			currentVersion = 93FE0ADB1CFDB43E00AC877C /* Loods.xcdatamodel */;
+			path = Loods.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93FE0AC31CFDB43E00AC877C /* Project object */;
+}
