@@ -1,18 +1,18 @@
 //
-//  MoodLogViewController.m
+//  SDLMoodLogViewController.m
 //  Loods
 //
 //  Created by Nikola on 31/05/16.
 //  Copyright © 2016 SixtyDegrees. All rights reserved.
 //
 
-#import "MoodLogViewController.h"
+#import "SDLMoodLogViewController.h"
 
-@interface MoodLogViewController ()
+@interface SDLMoodLogViewController ()
 
 @end
 
-@implementation MoodLogViewController
+@implementation SDLMoodLogViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

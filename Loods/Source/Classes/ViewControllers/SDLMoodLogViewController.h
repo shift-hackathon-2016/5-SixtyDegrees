@@ -1,5 +1,5 @@
 //
-//  MoodLogViewController.h
+//  SDLMoodLogViewController.h
 //  Loods
 //
 //  Created by Nikola on 31/05/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoodLogViewController : UIViewController
+@interface SDLMoodLogViewController : UIViewController
 
 @end

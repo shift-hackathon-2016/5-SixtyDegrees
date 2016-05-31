@@ -13,7 +13,7 @@
 		93FE0AE11CFDB43E00AC877C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0ADF1CFDB43E00AC877C /* LaunchScreen.storyboard */; };
 		93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0AF01CFDB4D000AC877C /* AppDelegate.m */; };
 		93FE0AF51CFDB51500AC877C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0AF41CFDB51500AC877C /* Assets.xcassets */; };
-		93FE0AF81CFDB57E00AC877C /* MoodLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0AF71CFDB57E00AC877C /* MoodLogViewController.m */; };
+		93FE0AF81CFDB57E00AC877C /* SDLMoodLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0AF71CFDB57E00AC877C /* SDLMoodLogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		93FE0AEF1CFDB4D000AC877C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93FE0AF01CFDB4D000AC877C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93FE0AF41CFDB51500AC877C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		93FE0AF61CFDB57E00AC877C /* MoodLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodLogViewController.h; sourceTree = "<group>"; };
-		93FE0AF71CFDB57E00AC877C /* MoodLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodLogViewController.m; sourceTree = "<group>"; };
+		93FE0AF61CFDB57E00AC877C /* SDLMoodLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodLogViewController.h; sourceTree = "<group>"; };
+		93FE0AF71CFDB57E00AC877C /* SDLMoodLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodLogViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 		93FE0AEC1CFDB46300AC877C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				93FE0AF61CFDB57E00AC877C /* MoodLogViewController.h */,
-				93FE0AF71CFDB57E00AC877C /* MoodLogViewController.m */,
+				93FE0AF61CFDB57E00AC877C /* SDLMoodLogViewController.h */,
+				93FE0AF71CFDB57E00AC877C /* SDLMoodLogViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			files = (
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
 				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
-				93FE0AF81CFDB57E00AC877C /* MoodLogViewController.m in Sources */,
+				93FE0AF81CFDB57E00AC877C /* SDLMoodLogViewController.m in Sources */,
 				93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
