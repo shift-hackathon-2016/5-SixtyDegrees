@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */; };
 		93FE0AD01CFDB43E00AC877C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ACF1CFDB43E00AC877C /* main.m */; };
 		93FE0AD91CFDB43E00AC877C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0AD71CFDB43E00AC877C /* Main.storyboard */; };
 		93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLocationManager.h; sourceTree = "<group>"; };
+		93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLLocationManager.m; sourceTree = "<group>"; };
 		93FE0ACB1CFDB43E00AC877C /* Loods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FE0ACF1CFDB43E00AC877C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93FE0AD81CFDB43E00AC877C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 		93FE0AEB1CFDB46300AC877C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */,
+				93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */,
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
 				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
 				93FE0AF81CFDB57E00AC877C /* SDLMoodLogViewController.m in Sources */,
