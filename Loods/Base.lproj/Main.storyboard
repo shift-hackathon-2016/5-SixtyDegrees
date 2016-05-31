@@ -21,5 +21,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Mood Map View Controller-->
+        <scene sceneID="fOS-9W-okD">
+            <objects>
+                <viewController id="bZI-Fz-B3i" customClass="SDLMoodMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NYQ-kT-HCB"/>
+                        <viewControllerLayoutGuide type="bottom" id="qzc-E7-kbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bsi-j9-87i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sb4-4X-NTG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bZI-Fz-B3i" id="rTD-RD-0dB"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sb4-4X-NTG" firstAttribute="centerY" secondItem="bsi-j9-87i" secondAttribute="centerY" id="0CZ-ko-Y31"/>
+                            <constraint firstItem="Sb4-4X-NTG" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="8xN-Bj-sqg"/>
+                            <constraint firstItem="Sb4-4X-NTG" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="width" id="cf4-i6-Azo"/>
+                            <constraint firstItem="Sb4-4X-NTG" firstAttribute="height" secondItem="bsi-j9-87i" secondAttribute="height" id="uZc-l8-Gf2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapViewMood" destination="Sb4-4X-NTG" id="Nqw-gu-M9S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjM-uH-EkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="197"/>
+        </scene>
     </scenes>
 </document>

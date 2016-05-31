@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */; };
+		93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */; };
+		93A0C0291CFDE39A003E7747 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0C0281CFDE39A003E7747 /* MapKit.framework */; };
 		93FE0AD01CFDB43E00AC877C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ACF1CFDB43E00AC877C /* main.m */; };
 		93FE0AD91CFDB43E00AC877C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FE0AD71CFDB43E00AC877C /* Main.storyboard */; };
 		93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */; };
@@ -20,6 +22,9 @@
 /* Begin PBXFileReference section */
 		93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLocationManager.h; sourceTree = "<group>"; };
 		93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLLocationManager.m; sourceTree = "<group>"; };
+		93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodMapViewController.h; sourceTree = "<group>"; };
+		93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodMapViewController.m; sourceTree = "<group>"; };
+		93A0C0281CFDE39A003E7747 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		93FE0ACB1CFDB43E00AC877C /* Loods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FE0ACF1CFDB43E00AC877C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93FE0AD81CFDB43E00AC877C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,12 +43,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A0C0291CFDE39A003E7747 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93A0C02A1CFDE4BA003E7747 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93A0C0281CFDE39A003E7747 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93FE0AC21CFDB43E00AC877C = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +84,7 @@
 				93FE0AE21CFDB43E00AC877C /* Info.plist */,
 				93FE0ADA1CFDB43E00AC877C /* Loods.xcdatamodeld */,
 				93FE0ACE1CFDB43E00AC877C /* Supporting Files */,
+				93A0C02A1CFDE4BA003E7747 /* Frameworks */,
 			);
 			path = Loods;
 			sourceTree = "<group>";
@@ -122,6 +137,8 @@
 			children = (
 				93FE0AF61CFDB57E00AC877C /* SDLMoodLogViewController.h */,
 				93FE0AF71CFDB57E00AC877C /* SDLMoodLogViewController.m */,
+				93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */,
+				93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */,
 				93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */,
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
 				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
