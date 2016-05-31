@@ -7,31 +7,106 @@
 //
 
 #import "SDLMoodLogViewController.h"
+#import <MapKit/MapKit.h>
+#import "SDLLocationManager.h"
 
-@interface SDLMoodLogViewController ()
+@interface SDLMoodLogViewController () <SDLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewBackground;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewLogo;
+@property (weak, nonatomic) IBOutlet UIButton *buttonInfo;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSearch;
+@property (weak, nonatomic) IBOutlet UILabel *labelStatus;
+@property (weak, nonatomic) IBOutlet UILabel *labelTownDescription;
+@property (weak, nonatomic) IBOutlet UILabel *labelAddressDescription;
+
+@property (strong, nonatomic) CLLocation *lastLocation;
 
 @end
 
 @implementation SDLMoodLogViewController
 
-- (void)viewDidLoad {
+#pragma mark - VC Lifecycle -
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self customizeUI];
+    
+    SDLLocationManager *manager = [SDLLocationManager sharedManager];
+    manager.delegate = self;
+    
+    [manager updateCurrentLocation];
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)viewDidAppear:(BOOL)animated
+{
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UI -
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
-*/
+
+- (void)customizeUI
+{
+    self.labelStatus.text = @"Getting location...";
+}
+
+- (void)didUpdateCurrentLocation:(CLLocation *)location
+{
+    //NSLog(@"Location: %@", location);
+    
+    self.lastLocation = location;
+    
+    [[SDLLocationManager sharedManager] updatePlacemarkForLocation:location];
+}
+
+- (void)didUpdatePlacemark:(CLPlacemark *)placemark
+{
+    /*
+    NSLog(@"City: %@", placemark.locality);
+    NSLog(@"Adress: %@ - %@ - %@ : %@", placemark.name, placemark.thoroughfare, placemark.subThoroughfare, placemark.administrativeArea);
+    
+    NSLog(@"%@", placemark);
+     */
+    
+    self.labelStatus.text = @"How do you feel?";
+    self.labelTownDescription.text = [NSString stringWithFormat:@"You are in %@", placemark.locality];
+    self.labelAddressDescription.text = [NSString stringWithFormat:@"at %@, %@", placemark.thoroughfare, placemark.administrativeArea];
+    
+    self.labelTownDescription.hidden = NO;
+    self.labelAddressDescription.hidden = NO;
+    
+    [self zoomMap:self.mapView location:self.lastLocation delta:0.03 animated:NO];
+    [self zoomMap:self.mapView location:self.lastLocation delta:0.02 animated:YES];
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        self.imageViewBackground.alpha = 0.85;
+    }];
+    
+    
+}
+
+- (void)zoomMap:(MKMapView*)mapView location:(CLLocation *)location delta:(CGFloat)delta animated:(BOOL)animated
+{
+    MKCoordinateRegion mapRegion;
+    mapRegion.center = location.coordinate;
+    mapRegion.span.latitudeDelta = delta;
+    mapRegion.span.longitudeDelta = delta;
+    
+    [mapView setRegion:mapRegion animated:animated];
+}
 
 @end
