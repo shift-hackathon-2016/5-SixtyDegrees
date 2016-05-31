@@ -73,6 +73,9 @@
                                     <segue destination="bZI-Fz-B3i" kind="presentation" animates="NO" modalTransitionStyle="crossDissolve" id="mgU-vw-8Ck"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buJ-nN-zAU">
+                                <rect key="frame" x="222" y="427" width="240" height="128"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

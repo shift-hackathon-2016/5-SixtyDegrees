@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936BFE1B1CFE28B200C1004B /* SDLMoodCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936BFE1A1CFE28B200C1004B /* SDLMoodCardView.xib */; };
+		936BFE1E1CFE295800C1004B /* SDLMoodCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE1D1CFE295800C1004B /* SDLMoodCard.m */; };
 		93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */; };
 		93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */; };
 		93A0C0291CFDE39A003E7747 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0C0281CFDE39A003E7747 /* MapKit.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		936BFE1A1CFE28B200C1004B /* SDLMoodCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDLMoodCardView.xib; sourceTree = "<group>"; };
+		936BFE1C1CFE295800C1004B /* SDLMoodCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodCard.h; sourceTree = "<group>"; };
+		936BFE1D1CFE295800C1004B /* SDLMoodCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodCard.m; sourceTree = "<group>"; };
 		93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLocationManager.h; sourceTree = "<group>"; };
 		93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLLocationManager.m; sourceTree = "<group>"; };
 		93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodMapViewController.h; sourceTree = "<group>"; };
@@ -131,6 +136,8 @@
 			children = (
 				93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */,
 				93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */,
+				936BFE1C1CFE295800C1004B /* SDLMoodCard.h */,
+				936BFE1D1CFE295800C1004B /* SDLMoodCard.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				93FE0AD71CFDB43E00AC877C /* Main.storyboard */,
+				936BFE1A1CFE28B200C1004B /* SDLMoodCardView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				93FE0AE11CFDB43E00AC877C /* LaunchScreen.storyboard in Resources */,
 				93FE0AF51CFDB51500AC877C /* Assets.xcassets in Resources */,
 				93FE0AD91CFDB43E00AC877C /* Main.storyboard in Resources */,
+				936BFE1B1CFE28B200C1004B /* SDLMoodCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 				93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */,
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,
 				93FE0ADC1CFDB43E00AC877C /* Loods.xcdatamodeld in Sources */,
+				936BFE1E1CFE295800C1004B /* SDLMoodCard.m in Sources */,
 				93FE0AF81CFDB57E00AC877C /* SDLMoodLogViewController.m in Sources */,
 				93A0C0301CFE16C7003E7747 /* SDLInfoViewController.m in Sources */,
 				93FE0AF11CFDB4D000AC877C /* AppDelegate.m in Sources */,
