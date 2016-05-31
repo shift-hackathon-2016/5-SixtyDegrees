@@ -66,6 +66,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHR-A6-CJC">
+                                <rect key="frame" x="271" y="400" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="bZI-Fz-B3i" kind="presentation" animates="NO" modalTransitionStyle="crossDissolve" id="mgU-vw-8Ck"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -205,14 +212,46 @@
                                     <outlet property="delegate" destination="bZI-Fz-B3i" id="rTD-RD-0dB"/>
                                 </connections>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-FJ-45Z">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavigationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2Kb-Na-f9K">
+                                <rect key="frame" x="248" y="38" width="104" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Kb-Na-f9K" secondAttribute="height" multiplier="207:90" id="k6u-Jl-MOt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncS-UQ-Yzr">
+                                <rect key="frame" x="28" y="35" width="39" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ncS-UQ-Yzr" secondAttribute="height" multiplier="1:1" id="HTD-Yp-7m0"/>
+                                </constraints>
+                                <state key="normal" image="ButtonInfo"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XkN-FJ-45Z" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="03v-S7-LRE"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="centerY" secondItem="bsi-j9-87i" secondAttribute="centerY" id="0CZ-ko-Y31"/>
+                            <constraint firstItem="ncS-UQ-Yzr" firstAttribute="top" secondItem="NYQ-kT-HCB" secondAttribute="bottom" constant="-6" id="7Za-dh-C6v"/>
+                            <constraint firstItem="XkN-FJ-45Z" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="width" id="7fX-x8-Bwu"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="8xN-Bj-sqg"/>
+                            <constraint firstItem="XkN-FJ-45Z" firstAttribute="height" secondItem="bsi-j9-87i" secondAttribute="height" id="Fi8-FF-4rn"/>
+                            <constraint firstItem="XkN-FJ-45Z" firstAttribute="centerY" secondItem="bsi-j9-87i" secondAttribute="centerY" id="Ke6-Ty-xpw"/>
+                            <constraint firstItem="ncS-UQ-Yzr" firstAttribute="leading" secondItem="bsi-j9-87i" secondAttribute="leadingMargin" constant="8" id="QMw-zA-se3"/>
+                            <constraint firstItem="2Kb-Na-f9K" firstAttribute="centerX" secondItem="bsi-j9-87i" secondAttribute="centerX" id="Zs9-Ut-HPi"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="width" secondItem="bsi-j9-87i" secondAttribute="width" id="cf4-i6-Azo"/>
+                            <constraint firstItem="ncS-UQ-Yzr" firstAttribute="centerY" secondItem="2Kb-Na-f9K" secondAttribute="centerY" constant="-6" id="exp-l7-3tm"/>
+                            <constraint firstItem="2Kb-Na-f9K" firstAttribute="top" secondItem="NYQ-kT-HCB" secondAttribute="bottom" constant="18" id="ez1-1O-SKq"/>
+                            <constraint firstItem="ncS-UQ-Yzr" firstAttribute="centerX" secondItem="2Kb-Na-f9K" secondAttribute="centerX" id="fds-o7-BfH"/>
                             <constraint firstItem="Sb4-4X-NTG" firstAttribute="height" secondItem="bsi-j9-87i" secondAttribute="height" id="uZc-l8-Gf2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Za-dh-C6v"/>
+                                <exclude reference="fds-o7-BfH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="mapViewMood" destination="Sb4-4X-NTG" id="Nqw-gu-M9S"/>
@@ -229,6 +268,7 @@
         <image name="ButtonInfo" width="38" height="39"/>
         <image name="ButtonSearch" width="38" height="39"/>
         <image name="InfoLogo" width="190" height="83"/>
+        <image name="MapOverlay" width="375" height="667"/>
         <image name="NavigationLogo" width="103" height="45"/>
     </resources>
 </document>
