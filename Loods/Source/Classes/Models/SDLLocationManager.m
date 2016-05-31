@@ -64,4 +64,22 @@
     }
 }
 
+- (void)updatePlacemarkForLocation:(CLLocation *)location
+{
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        if(placemarks.count > 0){
+            if([self.delegate respondsToSelector:@selector(didUpdatePlacemark:)]){
+                [self.delegate didUpdatePlacemark:placemarks.firstObject];
+            }
+        }
+        else{
+            if([self.delegate respondsToSelector:@selector(didUpdatePlacemark:)]){
+                [self.delegate didUpdatePlacemark:nil];
+            }
+        }
+    }];
+}
+
 @end

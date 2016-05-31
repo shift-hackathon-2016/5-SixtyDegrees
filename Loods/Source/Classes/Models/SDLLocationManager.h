@@ -15,6 +15,8 @@
 
 - (void)didUpdateCurrentLocation:(CLLocation *)location;
 
+- (void)didUpdatePlacemark:(CLPlacemark *)placemark;
+
 @end
 
 @interface SDLLocationManager : NSObject
@@ -24,5 +26,7 @@
 + (SDLLocationManager *)sharedManager;
 
 - (void)updateCurrentLocation;
+
+- (void)updatePlacemarkForLocation:(CLLocation *)location;
 
 @end
