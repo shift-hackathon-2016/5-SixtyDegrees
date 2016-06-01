@@ -9,6 +9,7 @@
 #import "SDLMoodMapViewController.h"
 #import <MapKit/MapKit.h>
 #import "SDLLocationManager.h"
+#import "SDLMoodDataSource.h"
 
 @interface SDLMoodMapViewController ()
 
@@ -28,7 +29,10 @@
 {
     [super viewDidLoad];
     
-    [self addRadiusCircle:[[CLLocation alloc] initWithLatitude:46.7667 longitude:23.58]];
+    for(SDLMoodPoint *point in [[SDLMoodDataSource sharedDataSource] moodPoints]){
+        [self addRadiusCircle:point.location color:point.color radius:point.radius.floatValue];
+        break;
+    }
     
     [self zoomMap:self.mapViewMood toUserLocationAnimated:NO];
 }
@@ -47,9 +51,9 @@
 
 #pragma mark - Helper -
 
-- (void)addRadiusCircle:(CLLocation *)location
+- (void)addRadiusCircle:(CLLocation *)location color:(UIColor *)color radius:(CGFloat)radius
 {
-    MKCircle *circle = [MKCircle circleWithCenterCoordinate:location.coordinate radius:10000]; //meters
+    MKCircle *circle = [MKCircle circleWithCenterCoordinate:location.coordinate radius:1000]; //meters
     [self.mapViewMood addOverlay:circle];
 }
 

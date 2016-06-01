@@ -66,15 +66,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHR-A6-CJC">
-                                <rect key="frame" x="271" y="323" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="bZI-Fz-B3i" kind="presentation" animates="NO" modalTransitionStyle="crossDissolve" id="mgU-vw-8Ck"/>
-                                </connections>
-                            </button>
-                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buJ-nN-zAU">
-                                <rect key="frame" x="-1" y="59" width="602" height="481"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buJ-nN-zAU">
+                                <rect key="frame" x="-1" y="60" width="602" height="480"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="buJ-nN-zAU" secondAttribute="height" multiplier="15:12" id="0uj-dy-S32"/>
                                 </constraints>
@@ -121,6 +114,7 @@
                         <outlet property="labelTownDescription" destination="jnE-a1-kE1" id="H2X-se-bi9"/>
                         <outlet property="mapView" destination="5P4-RH-TgR" id="qvd-5P-HeK"/>
                         <outlet property="scrollViewMoodCards" destination="buJ-nN-zAU" id="1v8-3h-XPV"/>
+                        <segue destination="bZI-Fz-B3i" kind="presentation" identifier="LogToMapSegue" modalTransitionStyle="crossDissolve" id="XKp-0x-f8V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

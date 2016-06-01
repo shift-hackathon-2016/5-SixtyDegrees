@@ -14,6 +14,8 @@
 		936BFE2C1CFE301900C1004B /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE251CFE301900C1004B /* UIView+FLKAutoLayout.m */; };
 		936BFE2D1CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE271CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m */; };
 		936BFE2E1CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE291CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m */; };
+		936BFE311CFEBAE600C1004B /* SDLMoodDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE301CFEBAE600C1004B /* SDLMoodDataSource.m */; };
+		936BFE341CFEBB2700C1004B /* SDLMoodPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 936BFE331CFEBB2700C1004B /* SDLMoodPoint.m */; };
 		93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */; };
 		93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0C0261CFDE2EB003E7747 /* SDLMoodMapViewController.m */; };
 		93A0C0291CFDE39A003E7747 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0C0281CFDE39A003E7747 /* MapKit.framework */; };
@@ -41,6 +43,10 @@
 		936BFE271CFE301900C1004B /* UIView+FLKAutoLayoutDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKAutoLayoutDebug.m"; sourceTree = "<group>"; };
 		936BFE281CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKAutoLayoutPredicate.h"; sourceTree = "<group>"; };
 		936BFE291CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKAutoLayoutPredicate.m"; sourceTree = "<group>"; };
+		936BFE2F1CFEBAE600C1004B /* SDLMoodDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodDataSource.h; sourceTree = "<group>"; };
+		936BFE301CFEBAE600C1004B /* SDLMoodDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodDataSource.m; sourceTree = "<group>"; };
+		936BFE321CFEBB2700C1004B /* SDLMoodPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodPoint.h; sourceTree = "<group>"; };
+		936BFE331CFEBB2700C1004B /* SDLMoodPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMoodPoint.m; sourceTree = "<group>"; };
 		93A0C0221CFDC7CC003E7747 /* SDLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLocationManager.h; sourceTree = "<group>"; };
 		93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLLocationManager.m; sourceTree = "<group>"; };
 		93A0C0251CFDE2EB003E7747 /* SDLMoodMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMoodMapViewController.h; sourceTree = "<group>"; };
@@ -171,6 +177,10 @@
 				93A0C0231CFDC7CC003E7747 /* SDLLocationManager.m */,
 				936BFE1C1CFE295800C1004B /* SDLMoodCard.h */,
 				936BFE1D1CFE295800C1004B /* SDLMoodCard.m */,
+				936BFE2F1CFEBAE600C1004B /* SDLMoodDataSource.h */,
+				936BFE301CFEBAE600C1004B /* SDLMoodDataSource.m */,
+				936BFE321CFEBB2700C1004B /* SDLMoodPoint.h */,
+				936BFE331CFEBB2700C1004B /* SDLMoodPoint.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +306,8 @@
 				936BFE2E1CFE301900C1004B /* UIView+FLKAutoLayoutPredicate.m in Sources */,
 				936BFE2B1CFE301900C1004B /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */,
 				936BFE2A1CFE301900C1004B /* FLKAutoLayoutPredicateList.m in Sources */,
+				936BFE341CFEBB2700C1004B /* SDLMoodPoint.m in Sources */,
+				936BFE311CFEBAE600C1004B /* SDLMoodDataSource.m in Sources */,
 				93A0C0271CFDE2EB003E7747 /* SDLMoodMapViewController.m in Sources */,
 				93A0C0241CFDC7CC003E7747 /* SDLLocationManager.m in Sources */,
 				93FE0AD01CFDB43E00AC877C /* main.m in Sources */,

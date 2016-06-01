@@ -63,11 +63,22 @@
         [manager updateCurrentLocation];
     }];
     
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapScrollView:)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    tapGestureRecognizer.enabled = YES;
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    [self.scrollViewMoodCards addGestureRecognizer:tapGestureRecognizer];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     
+}
+
+- (void)didTapScrollView:(UITapGestureRecognizer *)gesture
+{
+    [self performSegueWithIdentifier:@"LogToMapSegue" sender:self];
 }
 
 - (void)didReceiveMemoryWarning
