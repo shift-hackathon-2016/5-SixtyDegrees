@@ -16,6 +16,7 @@
 
 @property (assign, nonatomic) BOOL animatedMapToUserLocation;
 @property (weak, nonatomic) IBOutlet UIButton *buttonInfo;
+@property (weak, nonatomic) IBOutlet UIButton *buttonAdd;
 
 @end
 
@@ -94,6 +95,11 @@
 
 - (IBAction)buttonInfoPressed:(id)sender
 {
+}
+
+- (IBAction)buttonAddPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
