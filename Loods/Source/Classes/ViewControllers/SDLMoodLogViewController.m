@@ -41,7 +41,27 @@
     SDLLocationManager *manager = [SDLLocationManager sharedManager];
     manager.delegate = self;
     
-    [manager updateCurrentLocation];
+    self.imageViewLogo.alpha = 0.0;
+    self.buttonInfo.alpha = 0.0;
+    self.buttonSearch.alpha = 0.0;
+    self.labelStatus.alpha = 0.0;
+    self.labelTownDescription.alpha = 0.0;
+    self.labelAddressDescription.alpha = 0.0;
+    self.scrollViewMoodCards.alpha = 0.0;
+    
+    [UIView animateWithDuration:0.5 delay:0.4 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.imageViewLogo.alpha = 1.0;
+        self.buttonInfo.alpha = 1.0;
+        self.buttonSearch.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [manager updateCurrentLocation];
+    }];
+    
+    [UIView animateWithDuration:0.2 delay:0.8 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.labelStatus.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [manager updateCurrentLocation];
+    }];
     
 }
 
@@ -72,7 +92,7 @@
     CGFloat itemSpacing = 20;
     CGFloat itemWidth = 200;
     CGFloat itemHeight = 250;
-    CGFloat itemMargins = 20;
+    CGFloat itemMargins = 90;
     
     for(NSString *moodTitle in [self moodTitles]){
         
@@ -122,18 +142,53 @@
     NSLog(@"%@", placemark);
      */
     
-    self.labelStatus.text = @"How do you feel?";
-    self.labelTownDescription.text = [NSString stringWithFormat:@"You are in %@", placemark.locality];
-    self.labelAddressDescription.text = [NSString stringWithFormat:@"at %@, %@", placemark.thoroughfare, placemark.administrativeArea];
+    
+    
+    [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.labelStatus.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        self.labelStatus.text = @"How do you feel?";
+        [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.labelStatus.alpha = 1.0;
+        } completion:^(BOOL finished) {
+        }];
+    }];
     
     self.labelTownDescription.hidden = NO;
     self.labelAddressDescription.hidden = NO;
     
-    [self zoomMap:self.mapView location:self.lastLocation delta:0.03 animated:NO];
-    [self zoomMap:self.mapView location:self.lastLocation delta:0.02 animated:YES];
+    self.labelTownDescription.text = [NSString stringWithFormat:@"You are in %@", placemark.locality];
+    self.labelAddressDescription.text = [NSString stringWithFormat:@"at %@, %@", placemark.thoroughfare, placemark.administrativeArea];
     
-    [UIView animateWithDuration:0.4 animations:^{
+    [UIView animateWithDuration:0.4 delay:0.3 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.labelTownDescription.alpha = 1.0;
+    } completion:^(BOOL finished) {
+    }];
+    
+    [UIView animateWithDuration:0.5 delay:0.8 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.labelAddressDescription.alpha = 1.0;
+    } completion:^(BOOL finished) {
+    }];
+    
+    
+    [self zoomMap:self.mapView location:self.lastLocation delta:0.03 animated:NO];
+    
+    
+    [UIView animateWithDuration:0.8 delay:0.8 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.imageViewBackground.alpha = 0.85;
+    } completion:^(BOOL finished) {
+    }];
+    
+    [UIView animateWithDuration:0.1 delay:1.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [self zoomMap:self.mapView location:self.lastLocation delta:0.02 animated:YES];
+    } completion:^(BOOL finished) {
+    }];
+    
+    
+    
+    [UIView animateWithDuration:0.6 delay:1.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.scrollViewMoodCards.alpha = 1.0;
+    } completion:^(BOOL finished) {
     }];
     
     
