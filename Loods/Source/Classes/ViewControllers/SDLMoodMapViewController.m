@@ -28,6 +28,8 @@
     [super viewDidLoad];
     
     [self addRadiusCircle:[[CLLocation alloc] initWithLatitude:46.7667 longitude:23.58]];
+    
+    [self zoomMap:self.mapViewMood toUserLocationAnimated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +55,7 @@
 - (void)zoomMap:(MKMapView*)mapView toUserLocationAnimated:(BOOL)animated
 {
     MKCoordinateRegion mapRegion;
-    mapRegion.center = mapView.userLocation.coordinate;
+    mapRegion.center = [[SDLLocationManager sharedManager] cachedLocation].coordinate;
     mapRegion.span.latitudeDelta = 0.02;
     mapRegion.span.longitudeDelta = 0.02;
     
@@ -64,10 +66,12 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
+    /*
     if(!self.animatedMapToUserLocation){
         self.animatedMapToUserLocation = YES;
         [self zoomMap:mapView toUserLocationAnimated:YES];
     }
+     */
 }
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
