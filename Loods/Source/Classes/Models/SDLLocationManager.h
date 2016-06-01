@@ -23,6 +23,8 @@
 
 @property (weak, nonatomic) id<SDLLocationManagerDelegate> delegate;
 
+@property (strong, nonatomic) CLLocation *cachedLocation;
+
 + (SDLLocationManager *)sharedManager;
 
 - (void)updateCurrentLocation;

@@ -45,13 +45,17 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
 {
+    self.cachedLocation = locations.firstObject;
+    
     if([self.delegate respondsToSelector:@selector(didUpdateCurrentLocation:)]){
         [self.delegate didUpdateCurrentLocation:locations.firstObject];
     }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{    
+{
+    self.cachedLocation = nil;
+    
     if([self.delegate respondsToSelector:@selector(didUpdateCurrentLocation:)]){
         [self.delegate didUpdateCurrentLocation:nil];
     }
